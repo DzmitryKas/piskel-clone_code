@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Piskel Clone</title>
+  </head>
+  <body>
+    <header class="header">
+      <h1>Piskel Clone</h1>
+      <p>New Piskel</p>
+      <div class="authorization">
+        <button>Create Sprite</button>
+        <button>Sign in</button>
+      </div>
+    </header>
+    <main class="main">
+      <section class="tools-and-frames">
+        <div class="tool-field">
+          <div class="pencil-width">
+            <div class="wrapper-width current-pencil">
+              <div class="small"></div>
+            </div>
+            <div class="wrapper-width">
+              <div class="medium-one"></div>
+            </div>
+            <div class="wrapper-width">
+              <div class="medium-two"></div>
+            </div>
+            <div class="wrapper-width">
+              <div class="big"></div>
+            </div>
+          </div>
+          <div class="tools">
+            <div class="pen active" title="Pen tool (P)"></div>
+            <div class="line" title="Stroke tool (L)"></div>
+            <div class="paint" title="Paint bucket tool (B)"></div>
+            <div class="eraser" title="Eraser tool (E)"></div>
+            <div class="checkbox" title="Rectangle tool (R)"></div>
+            <div class="blank-circle" title="Circle tool (C)"></div>
+            <div class="hand" title="Move tool (M)"></div>
+            <div class="pipette" title="Color picker (O)"></div>
+            <div
+              class="vertical-mirror-pen"
+              title="Vertical mirror pen (V)"
+            ></div>
+            <div class="turn" title="Rotation (T)"></div>
+            <div class="reflection" title="Flip vertically (F)"></div>
+            <div
+              class="paint-background"
+              title="Paint bucket background tool (A)"
+            ></div>
+          </div>
+          <div class="current-color">
+            <input type="color" class="first-current-color" />
+            <input type="color" class="second-current-color" />
+          </div>
+        </div>
+        <div class="menu-frame">
+          <div class="canvas-wrapper selected">
+            <canvas class="canvas-mini" width="128" height="128"></canvas>
+            <div class="counter">1</div>
+            <div class="icon-trash"></div>
+            <div class="icon-docs"></div>
+            <div class="icon-braille"></div>
+          </div>
+          <div class="add-frame">
+            <div class="icon-plus"></div>
+            <div>Add new frame</div>
+          </div>
+        </div>
+      </section>
+      <section class="section-basic-canvas">
+        <div class="wrapper-field-paint">
+          <div class="field-paint">
+            <canvas id="canvas-basic" width="128" height="128"></canvas>
+          </div>
+        </div>
+      </section>
+      <section class="animation">
+        <div class="wrapper-field-animation">
+          <div class="wrapper-canvas-animation">
+            <canvas class="canvas-animation" width="128" height="128"></canvas>
+          </div>
+          <div class="buttom-animation">
+            <input type="text" id="i1" />
+            <input type="range" id="r1" min="1" max="24" step="1" />
+          </div>
+          <div class="full-screen"></div>
+        </div>
+        <div class="information-canvas">
+          <p class="size-canvas"></p>
+          <p class="coordinates">[0,0]</p>
+        </div>
+      </section>
+      <div class="wrapper-size">
+        <div class="menu">
+          <a href="#" class="menu-btn"></a>
+          <nav class="menu-list">
+            <button class="low-canvas">32x32</button>
+            <button class="medium-canvas">64x64</button>
+            <button class="big-canvas">128x128</button>
+          </nav>
+        </div>
+      </div>
+      <a class="btn-save"></a>
+    </main>
+    <script type="text/javascript" src="gif.worker.js"></script>
+  </body>
+</html>

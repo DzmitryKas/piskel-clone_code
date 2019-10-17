@@ -1,0 +1,11 @@
+/.git
+/.vscode
+/dist
+/node_modules
+gif.js
+gif.worker.js
+NeuQuant.js
+LZWEncoder.js
+GIFEncoder.js
+b64.js
+
